@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index: Purchase Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body 
+        {
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar 
+        {
+            background-color: #007bff;
+            text-transform: uppercase;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link 
+        {
+            color: #fff;
+        }
+
+        .navbar-brand 
+        {
+            font-weight: bold;
+        }
+
+        .nav-link:hover 
+        {
+            color: #fff;
+        }
+
+        .nav-item.active .nav-link
+        {
+            font-weight: bold;
+        }
+
+        .sidebar 
+        {
+            background-color: #1D2951;
+            width: 250px;
+            height: 100vh;
+            padding-top: 70px;
+            border-right: 1px solid #ccc;
+            overflow-y: auto;
+            text-transform: uppercase;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+        .sidebar .nav-link 
+        {
+            color: white;
+        }
+
+        .sidebar .nav-link:hover 
+        {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .sidebar .nav-link.active 
+        {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .content 
+        {
+            flex: 1;
+            padding: 20px;
+            margin-left: 250px;
+            background-color: #f8f9fa;
+            margin: 30px 20px 0 250px;
+            background-color: #f8f9fa;
+        }
+
+        .footer 
+        {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            padding-left: 150px;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-top: auto;
+            margin-left: 250px;
+        }
+
+        .dashboard-link 
+        {
+            background-color: #007bff;
+        }
+
+        .maintenance-link 
+        {
+            background-color: #007bff;
+        }
+
+        .sidebar-section 
+        {
+            margin-bottom: 20px;
+        }
+
+        .sidebar-section-header 
+        {
+            font-weight: bold;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            margin-bottom: 0;
+        }
+
+        a 
+        {
+            color: white;
+        }
+
+        a:hover,
+        a:active,
+        a:visited 
+        {
+            color: white;
+        }
+
+        .navbar-nav .nav-item.info .icon 
+        {
+            color: white;
+        }
+        .navbar-nav .nav-item.info {
+            margin-left: 15px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .signature {
+            font-size: 16px;
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-shopping-cart"></i>
+            Purchase Management System
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item info">
+                <i class="fas fa-building icon"></i>
+                <a href="http://localhost/Project/ComapanyInfo.html">Company Details</a>
+            </li>
+            <li class="nav-item info">
+                <i class="fas fa-user icon"></i>
+                <a href="http://localhost/Project/AccountDetails.php">Account Details</a>
+            </li>
+        </li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-section">
+            <h5 class="sidebar-section-header">Dashboard</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/Project/SupplierList.php">
+                        <i class="fas fa-users"></i> Supplier List
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/Project/ItemList.php">
+                        <i class="fas fa-list"></i> Item List
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/Project/NewPurchaseOrder.php">
+                        <i class="fas fa-plus"></i> New Purchase Order
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-section">
+            <h5 class="sidebar-section-header">Maintenance</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/Project/UserList.php">
+                        <i class="fas fa-user"></i> User List
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/Project/Report.php">
+                        <i class="fas fa-chart-bar"></i> Reports
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-section mt-auto">
+            <ul class="nav flex-column">
+                <li class="nav-item info">
+                    <a href="logout.php" class="btn btn-danger nav-link text-center">
+                        <i class="fas fa-door-open"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Welcome to the Purchase Management System-PHP</h1>
+        <br><br>
+        <div class="message">
+            We are delighted to welcome you to our Purchase Management System, a powerful and user-friendly platform designed to streamline and optimize your purchasing process. This system has been carefully crafted to cater to the unique needs of businesses, organizations, and individuals alike, providing efficient and effective management of all your procurement activities.
+            <br><br>
+            With our Purchase Management System, you can expect a seamless and organized experience, enabling you to make smarter purchasing decisions, control expenses, and enhance overall productivity. Whether you are a small enterprise or a large corporation, our feature-rich system is tailored to meet your specific requirements and grow with your business.
+            <br><br>
+            Thank you for choosing our Purchase Management System. We are thrilled to be a part of your procurement process and look forward to helping you optimize your purchasing operations for increased efficiency and success.
+            <br><br>
+        </div>
+        <div class="signature">
+            Best regards,<br>
+            [Purchase Management System (pms)]
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 Purchase Management System. All rights reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login: Purchase Management System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body{
+      background: url("img3.jpg");
+      font-family: Arial, sans-serif;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: slide-background 20s linear infinite;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      flex: 1;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      animation: slide-rotate 1s ease-in;
+      transform-origin: center;
+    }
+
+    @keyframes slide-rotate {
+      0% {
+        opacity: 0;
+        transform: translateX(100%) rotate(90deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+      }
+    }
+
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      color: #333;
+      font-size: 25px;
+      margin-bottom: 20px;
+      animation: slide-up 1s ease-in;
+    }
+    
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 20px;
+      animation: slide-up 1s ease-in;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+      animation: fade-in 1s ease-in;
+      background: transparent;
+      color: #333;
+      width: 100%;
+    }
+    
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+    
+    .form-group label {
+      color: #333;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    
+    .form-submit {
+      width: 100%;
+      padding: 12px 20px;
+      background-color: #3366ff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-submit:hover,
+    .form-submit:focus {
+      background-color: #00A3FF;
+      outline: none;
+      border: 2px solid white;
+    }
+    
+    .form-submit {
+      margin-right: 10px;
+    }
+
+    .form-submit.submit-button {
+      background-color: #3366ff;
+    }
+
+
+    .form-submit.refresh-button {
+      background-color: #ff3366;
+    }
+
+    @keyframes slide-background {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Purchase Management System <i class="fas fa-shopping-cart"></i></h1>
+      <h2>Log in to start your session</h2>
+      <form method="post" action="http://localhost/Project/Login.php">
+        <div class="form-group">
+          <label for="username"><b><i class="fas fa-user"></i> Username</b></label>
+          <input type="text" id="username" name="username" placeholder="Username" required class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="password"><b><i class="fas fa-lock"></i> Password</b></label>
+          <input type="password" id="password" name="password" placeholder="Password" required class="form-control">
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <button class="form-submit" type="submit"><i class="fas fa-sign-in-alt"></i> SUBMIT</button>
+          <button class="form-submit" type="reset"><i class="fas fa-sync-alt"></i> REFRESH</button>
+        </div>
+      </form>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="http://localhost/Project/SignIn.php" class="form-submit sign-up-button"><i class="fas fa-user-plus"></i><b><i>SIGN UP</i></b></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

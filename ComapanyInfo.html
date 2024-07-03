@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Management System | Company Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, rgba(0, 191, 255, 0.7), rgba(92, 0, 255, 0.7)),
+                        linear-gradient(45deg, rgba(255, 255, 255, 0.7), transparent),
+                        linear-gradient(45deg, rgba(255, 255, 255, 0.7), transparent);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+
+        main {
+            padding: 30px;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            text-transform: uppercase;
+            animation: fadeInDown 0.5s;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        .nav-item.active .nav-link {
+            font-weight: bold;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover,
+        a:active,
+        a:visited {
+            color: white;
+        }
+
+        .navbar-nav .nav-item.info a {
+            color: white;
+        }
+
+        .info-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards; 
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            background-color: #007bff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+            color: #fff;
+            animation: fadeInUp 1s;
+        }
+
+        .footer p {
+            margin-bottom: 0;
+        }
+
+        .icon {
+            color: white;
+        }
+        .navbar-nav .nav-item.info {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-shopping-cart"></i>
+    Purchase Management System
+  </a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item info">
+      <i class="fas fa-home icon"></i>
+      <a href="http://localhost/Project/Index.html">Home</a>
+    </li>
+    <li class="nav-item info">
+        <i class="fas fa-user icon"></i>
+        <a href="http://localhost/Project/AccountDetails.php">Account Details</a>
+      </li>
+  </ul>
+</nav>
+
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="info-section animated fade-in-up">
+                    <h2><b>ABOUT US</b></h2>
+                    <p>
+                        Welcome to our Purchase Management System, where we provide efficient solutions to manage your
+                        purchases effectively. Our platform helps you streamline the entire purchasing process,
+                        optimizing resources, and reducing costs.
+                    </p>
+                    <p>
+                        We aim to revolutionize the way businesses manage their procurement, offering a user-friendly
+                        interface and powerful features to simplify your purchasing operations.
+                    </p>
+                    <p>
+                        Our company was founded in 2022 with the vision of transforming the procurement landscape for
+                        businesses of all sizes. Over the years, we have served thousands of clients, helping them
+                        achieve better control over their purchasing processes, resulting in increased efficiency and
+                        cost savings.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="info-section animated fade-in-up">
+                    <h2><b>CONTACT INFORMATION</b></h2>
+                    <ul class="contact-list">
+                        <li><strong>Address:</strong> 1234 Main Street, City, Country</li>
+                        <li><strong>Email:</strong> info@purchasemanagement.com</li>
+                        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                        <li><strong>Website:</strong> www.purchasemanagement.com</li>
+                    </ul>
+                </div>
+
+                
+            <div class="col-md-12">
+                <div class="info-section animated fade-in-up">
+                    <h2><b>OUR SERVICES</b></h2>
+                    <p>
+                        At Purchase Management System, we offer a comprehensive range of services to cater to your
+                        procurement needs. Our services include, but are not limited to:
+                    </p>
+                    <ul>
+                        <li>Efficient Purchase Order Management</li>
+                        <li>Supplier Management and Collaboration</li>
+                        <li>Inventory Tracking and Management</li>
+                        <li>Cost Analysis and Reporting</li>
+                        <li>Automated Procurement Workflows</li>
+                        <li>And much more...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer bg-light text-dark text-center">
+    <div class="container">
+        &copy; 2023 Purchase Management System. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
