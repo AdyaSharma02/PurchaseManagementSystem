@@ -142,8 +142,7 @@ o	Import the pms.sql file into your MySQL database.
 o	Update the database connection details in config.php.
 5.	Run the Application:
 o	Open the project in a local server environment (e.g., XAMPP, WAMP).
-6.	Access the Application:
-o	Open a web browser and navigate to http://localhost/PurchaseManagementSystem.
+6.	Access the Application
 
 
 Usage
@@ -165,11 +164,5 @@ o	Add, edit, or delete user information.
 o	View and update your account details.
 
 
-Contribution
-1.	Fork the Repository.
-2.	Create a New Branch:
-3.	Make Your Changes.
-4.	Commit Your Changes:
-5.	Push to the Branch:
-6.	Open a Pull Request.
-
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
