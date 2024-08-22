@@ -1,10 +1,12 @@
-Purchase Management System (PMS)
+# Purchase Management System (PMS)
 
-Overview
+# Overview
 The Purchase Management System (PMS) is designed to streamline and manage purchasing activities, supplier relationships, and inventory tracking. This system ensures secure access for users, comprehensive management of suppliers and items, and the creation of detailed purchase orders and reports.
 
 
-User Interface Technologies
+
+
+# User Interface Technologies
 •	PHP
 •	HTML
 •	CSS
@@ -12,7 +14,9 @@ User Interface Technologies
 •	Bootstrap
 
 
-Database
+
+
+# Database
 •	Database Name: pms
 •	Tables:
 o	login_logout
@@ -22,7 +26,7 @@ o	new_purchase_order
 o	user_list
 
 
-Features
+# Features
 1. Secure Login/Logout and SignIn
 •	Description: Secure login and logout functionality to ensure only authorized users can access the system.
 •	Files:
@@ -131,38 +135,55 @@ o	Report.php
 o	AccountDetails.php
 
 
-Installation and Setup
+# Installation and Setup
+
 1.	Clone the Repository:
 git clone https://github.com/AdyaSharma02/PurchaseManagementSystem.git
+
 2.	Navigate to the Project Directory:
 cd PurchaseManagementSystem
+
 3.	Setup Database:
 o	Import the pms.sql file into your MySQL database.
+
 4.	Configure Database Connection:
 o	Update the database connection details in config.php.
+
 5.	Run the Application:
 o	Open the project in a local server environment (e.g., XAMPP, WAMP).
+
 6.	Access the Application
 
 
-Usage
+
+
+# Usage
 1.	Login:
 o	Enter your username and password on the login page.
+
 2.	Navigate to Different Sections:
 o	Use the navigation menu to access different sections like supplier list, item list, purchase orders, user management, and reports.
+
 3.	Manage Suppliers:
 o	Add, edit, or delete supplier information.
+
 4.	Manage Items:
 o	Add, edit, or delete item details.
+
 5.	Create and Manage Purchase Orders:
 o	Create new purchase orders and update or delete existing ones.
+
 6.	Generate Reports:
 o	Generate and view reports on purchase activities.
+
 7.	Manage Users:
 o	Add, edit, or delete user information.
+
 8.	View Account Details:
 o	View and update your account details.
 
 
-Contributing
+
+
+# Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
